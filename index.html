@@ -38,6 +38,7 @@
         padding: 5px 1px;
         margin-right: 4px;
        display: inline-block;
+        font-family: monospace;
     }
 
     .buttons {
@@ -49,15 +50,13 @@
             margin-right: 4px;
 
             padding: 5px 10px;
-            background-color: #d8d8d8;
+            background-color: black;
             border: none;
-            border-radius: 30px
+            border-radius: 10px
             color: white;
             font-size: 15px;
-
             cursor: pointer;
             outline: none;
-
             transition: 0.1s;
         }
 
@@ -87,9 +86,10 @@
     <div class="buttons">
       <input type="text" id="input" name="input" placeholder="minutes">
       <input type="text" id="input2" name="input2" placeholder="seconds">
-
-      <button onclick="start()">▶</button>
+      <button onclick="start()" href="#"> <i class="fa-solid fa-house"></i></button> 
       <button onclick="cancel()">∎</button>
+
+      <a id="home" onclick="navigate(this.id) Home</a>
     </div>
     
   </section>
