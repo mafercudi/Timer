@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,36 +12,33 @@
   <style>
     body{
       background-color: white;
-      Width: 170px;
-      border: 2px solid #000000;
-      box-shadow: 2px 2px 1px 1px #000000;
-      border-radius: 5px;
-
       
     }
     .section {
-      background-color: White;
+      background-color: white;
       padding: 10px;
       width: fit-content;
+      align: center;
+      border: 2px solid #000000;
+      box-shadow: 2px 2px 1px 1px #000000;
+      border-radius: 5px; 
 
     }
 #display{
   margin-bottom: 5px;
     font-size: 30px;
     font-family: monospace;
-    color: Black;
+    color: darkturquoise;
 }
     .section input {
       font-size: 8px;
         color: #2D2D32;
         text-align: center;
         border: 1px solid gray;
-        border-radius: 30px;
         width: 30px;
         padding: 5px 1px;
         margin-right: 4px;
        display: inline-block;
-        font-family: monospace;
     }
 
     .buttons {
@@ -50,13 +50,16 @@
             margin-right: 4px;
 
             padding: 5px 10px;
-            background-color: black;
+
+            background-color: #d8d8d8;
             border: none;
-            border-radius: 3px
+
             color: white;
             font-size: 15px;
+
             cursor: pointer;
             outline: none;
+
             transition: 0.1s;
         }
 
@@ -84,12 +87,11 @@
     <div id="display">0:00</div>
   
     <div class="buttons">
-      <input type="text" id="input" name="input" placeholder="minute">
+      <input type="text" id="input" name="input" placeholder="minutes">
       <input type="text" id="input2" name="input2" placeholder="seconds">
-      <button onclick="start()" >▶</button>
-      <button onclick="cancel()">∎</button>
 
-      <a id="home" onclick="navigate(this.id) Home</a>
+      <button onclick="start()">▶</button>
+      <button onclick="cancel()">∎</button>
     </div>
     
   </section>
